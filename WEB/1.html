@@ -7,21 +7,38 @@
 <body>
 <h1><p style="text-align: center"><a href="http://cms.pknu.ac.kr/itcae/main.do" target="_blank"><u>IT융합응용공학과</u></a></h1>
   <input id="night_day" type="button" value="night" onclick="
-  if(document.querySelector('#night_day').value==='night')
+   var target=document.querySelector('body');
+  if(this.value==='night')
 {
-  document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').style.color='white';
-  document.querySelector('#night_day').value='day';
+  target.style.backgroundColor='black';
+  target.style.color='gray';
+  this.value='day';
+
+  var alist=document.querySelectorAll('a');
+  var i=0;
+  while(i<alist.length)
+  {
+    alist[i].style.color='skyblue';
+    i=i+1;
+  }
 } else{
-  document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';
-  document.querySelector('#night_day').value='night';
+  target.style.backgroundColor='white';
+  target.style.color='black';
+  this.value='night';
+
+  var alist=document.querySelectorAll('a');
+  var i=0;
+  while(i<alist.length)
+  {
+    alist[i].style.color='black';
+    i=i+1;
+  }
 }
 ">
 <ol>
-  <li><a href="1.html"><p style="color:black">연구실</p></a></li>
-  <li><a href="2.html"><p style="color:black">학년별 시간표</p></a></li>
-  <li><a href="3.html"><p style="color:black">전공 2학기 계획</p></a></li>
+  <li><a href="1.html"><p style="color:gray">연구실</p></a></li>
+  <li><a href="2.html"><p style="color:gray">학년별 시간표</p></a></li>
+  <li><a href="3.html"><p style="color:gray">전공 2학기 계획</p></a></li>
   </ol>
   <p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/X3NTD1PcsmI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
