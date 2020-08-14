@@ -4,6 +4,9 @@
   <title>IT융합응용공학과</title>
   <meta charset="utf-8">
   <style>
+  body{
+    margin:0;
+  }
     #select{
       font-size:15px
     }
@@ -13,64 +16,90 @@
     a:hover{
       color:pink;
     }
+    a{
+      color:black;
+      text-decoration:none;
+    }
     .saw{
-      color:black
+      color:black;
+    }
+    h1{
+      border-bottom:3px solid gray;
+      font-size:45px;
+      text-align: center;
+      margin:0;
+      padding:20px;
+    }
+    ol{
+      border-right:3px solid gray;
+      width:150px;
+      margin:0;
+      padding:20px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 230px 1fr;
     }
   </style>
 </head>
 <body>
-<h1><p style="text-align: center"><a href="http://cms.pknu.ac.kr/itcae/main.do" class="saw" target="_blank"><u>IT융합응용공학과</u></a></h1>
-  <input id="night_day" type="button" value="night" onclick="
-   var target=document.querySelector('body');
-  if(this.value==='night')
-{
-  target.style.backgroundColor='black';
-  target.style.color='gray';
-  this.value='day';
-
-  var alist=document.querySelectorAll('a');
-  var i=0;
-  while(i<alist.length)
+<h1><a href="http://cms.pknu.ac.kr/itcae/main.do" class="saw" target="_blank"><u>IT융합응용공학과</u></a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+     var target=document.querySelector('body');
+    if(this.value==='night')
   {
-    alist[i].style.color='#B0E0E6';
-    i=i+1;
-  }
-} else{
-  target.style.backgroundColor='white';
-  target.style.color='gray';
-  this.value='night';
+    target.style.backgroundColor='black';
+    target.style.color='gray';
+    this.value='day';
 
-  var alist=document.querySelectorAll('a');
-  var i=0;
-  while(i<alist.length)
-  {
-    alist[i].style.color='black';
-    i=i+1;
+    var alist=document.querySelectorAll('a');
+    var i=0;
+    while(i<alist.length)
+    {
+      alist[i].style.color='#B0E0E6';
+      i=i+1;
+    }
+  } else{
+    target.style.backgroundColor='white';
+    target.style.color='gray';
+    this.value='night';
+
+    var alist=document.querySelectorAll('a');
+    var i=0;
+    while(i<alist.length)
+    {
+      alist[i].style.color='black';
+      i=i+1;
+    }
   }
-}
-">
-<ol>
-  <li id="select"><a href="1.html"><p style="color:gray">연구실</p></a></li>
-  <li id="select"><a href="2.html"><p style="color:gray">학년별 시간표</p></a></li>
-  <li id="select"><a href="3.html"><p style="color:gray">전공 2학기 계획</p></a></li>
+  ">
+  <div id="grid">
+  <ol>
+    <li id="select"><a href="1.html"><p style="color:gray">연구실</p></a></li>
+    <li id="select"><a href="2.html"><p style="color:gray">학년별 시간표</p></a></li>
+    <li id="select"><a href="3.html"><p style="color:gray">전공 2학기 계획</p></a></li>
+  </ol>
+  <div>
+    <p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/X3NTD1PcsmI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+  <h2 style="color:skyblue">연구실</h2>
+  <ul>
+  <li><strong>김영봉 </strong>교수님 : <strong>웅비관 1311</strong>호실</li>
+  <li><strong>권오흠 </strong>교수님 : <strong>누리관 2312</strong>호실</li>
+  <li><strong>송하주 </strong>교수님 : <strong>웅비관 1308</strong>호실</li>
+  <li><strong>김창수 </strong>교수님 : <strong>웅비관 1301</strong>호실</li>
+  <li><strong>김종남 </strong>교수님 : <strong>누리관 2409</strong>호실</li>
+  <li><strong>이경현 </strong>교수님 : <strong>웅비관 1304</strong>호실</li>
+  <li><strong>권기룡 </strong>교수님 : <strong>웅비관 1315</strong>호실</li>
+  <li><strong>신봉기 </strong>교수님 : <strong>누리관 2315</strong>호실</li>
+  <li><strong>신상욱 </strong>교수님 : <strong>웅비관 1312</strong>호실</li>
+  <li><strong>최선한 </strong>교수님 : <strong>누리관 2301</strong>호실</li>
+  <li><strong>최필주 </strong>교수님 : <strong>누리관 131</strong>호실</li>
+  </ul>
   <p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/X3NTD1PcsmI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </p>
-<h2 style="color:skyblue">연구실</h2>
-<ul>
-<li><strong>김영봉 </strong>교수님 : <strong>웅비관 1311</strong>호실</li>
-<li><strong>권오흠 </strong>교수님 : <strong>누리관 2312</strong>호실</li>
-<li><strong>송하주 </strong>교수님 : <strong>웅비관 1308</strong>호실</li>
-<li><strong>김창수 </strong>교수님 : <strong>웅비관 1301</strong>호실</li>
-<li><strong>김종남 </strong>교수님 : <strong>누리관 2409</strong>호실</li>
-<li><strong>이경현 </strong>교수님 : <strong>웅비관 1304</strong>호실</li>
-<li><strong>권기룡 </strong>교수님 : <strong>웅비관 1315</strong>호실</li>
-<li><strong>신봉기 </strong>교수님 : <strong>누리관 2315</strong>호실</li>
-<li><strong>신상욱 </strong>교수님 : <strong>웅비관 1312</strong>호실</li>
-<li><strong>최선한 </strong>교수님 : <strong>누리관 2301</strong>호실</li>
-<li><strong>최필주 </strong>교수님 : <strong>누리관 131</strong>호실</li>
-</ul>
-<p>
+  </div>
+</div>
   <script>
 /**
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
