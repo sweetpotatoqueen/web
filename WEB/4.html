@@ -19,7 +19,7 @@
     a{
           color:#46649B;
     }
-    .saw{
+    #saw{
       color:#46649B;
     }
     h1{
@@ -39,10 +39,13 @@
       display: grid;
       grid-template-columns: 230px 1fr;
     }
+    #title{
+      color:skyblue;
+    }
   </style>
 </head>
 <body>
-<h1><a href="http://cms.pknu.ac.kr/itcae/main.do"  class="saw" target="_blank"><u>IT융합응용공학과</u></a></h1>
+<h1><a href="http://cms.pknu.ac.kr/itcae/main.do"  id="saw" target="_blank"><u>IT융합응용공학과</u></a></h1>
     <input id="night_day" type="button" value="night" onclick="
     var target=document.querySelector('body');
    if(this.value==='night')
@@ -80,4 +83,5 @@
       <li id="select"><a href="4.html"><p style="color:gray">졸업요건</p></a></li>
     </ol>
     <div>
-  <h2 style="color:skyblue">졸업요건</h2>
+  <h2 style="color:skyblue"><a href="http://cms.pknu.ac.kr/itcae/view.do?no=9579&idx=436313&view=view&pageIndex=1&sv=&sw=" id="title" target="_blank">졸업요건</a></h2>
+  제목 클릭 후 하단 파일 참고
